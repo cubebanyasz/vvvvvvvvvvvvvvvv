@@ -4,7 +4,9 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "author": "",
   "license": "ISC",
@@ -14,9 +16,11 @@
     "discord.js": "^12.4.1",
     "express": "^4.17.1",
     "flatted": "^3.0.2",
-    "node-fetch": "^2.6.1",
+    "node-fetch": "^2.6.7",
     "papaparse": "^5.2.0",
     "setimmediate": "^1.0.5",
-    "winston": "^3.2.1"
-  }
+    "winston": "^3.2.1",
+    "@snyk/protect": "latest"
+  },
+  "snyk": true
 }
